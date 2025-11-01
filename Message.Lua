@@ -13,12 +13,17 @@
                                                                      \______/
 ]]
 
-if game.Workspace.Lobby or game.Workspace.CurrentRooms then
-	local MOTU = "Message Of The Update: No KEY!!! Enjoy "..game.Players.LocalPlayer.DisplayName
-elseif game.Workspace.Live then
-	local MOTU = "Message Of The Update: No KEY!!! Enjoy "..game.Players.LocalPlayer.DisplayName
-else
-	local MOTU = "Message Of The Update: No KEY!!! Enjoy "..game.Players.LocalPlayer.DisplayName
-end
+	local MOTU = "UNIVERSAL :D" .. game.Players.LocalPlayer.DisplayName -- universal
+
+	-- doors lobby
+	if game.Workspace:FindFirstChild("Lobby") then
+		MOTU = "Nothing In This :D " .. game.Players.LocalPlayer.DisplayName
+	elseif game.Workspace:FindFirstChild("CurrentRooms") then -- doors game
+		MOTU = " Hint: Was Patched But We Will Have It" .. game.Players.LocalPlayer.DisplayName
+	elseif game.Workspace:FindFirstChild("Live") then -- ink game
+		MOTU = "idk..." .. game.Players.LocalPlayer.DisplayName
+	end
+
+	-- Print banner and MOTU
 	print(asciiArt)
 	print(MOTU)

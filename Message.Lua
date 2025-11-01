@@ -13,17 +13,16 @@
                                                                      \______/
 ]]
 
-	local MOTU = "UNIVERSAL :D " .. game.Players.LocalPlayer.DisplayName -- universal
+	local MOTU = "UNIVERSAL :D"
 
 	-- doors lobby
 	if game.Workspace:FindFirstChild("Lobby") then
-		MOTU = "Nothing In This :D " .. game.Players.LocalPlayer.DisplayName
+		MOTU = "Nothing In This :D"
 	elseif game.Workspace:FindFirstChild("CurrentRooms") then -- doors game
-		MOTU = " Hint: Was Patched But We Will Have It " .. game.Players.LocalPlayer.DisplayName
+		MOTU = " Hint: Was Patched But We Will Have It" 
 	elseif game.Workspace:FindFirstChild("Live") then -- ink game
-		MOTU = "idk... " .. game.Players.LocalPlayer.DisplayName
+		MOTU = "idk..."
 	end
 
-	-- Print banner and MOTU
 	print(asciiArt)
 	print(MOTU)

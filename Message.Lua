@@ -17,11 +17,11 @@
 
 	-- doors lobby
 	if game.Workspace:FindFirstChild("Lobby") then
-		MOTU = "Nothing In This :D"
+		MOTU = " Hint: NO HINT RN SINCE ITS IN BETA VERSION CUZ YES"
 	elseif game.Workspace:FindFirstChild("CurrentRooms") then -- doors game
-		MOTU = " Hint: Was Patched But We Will Have It" 
+		MOTU = " Hint: NO HINT RN SINCE ITS IN BETA VERSION CUZ YES" 
 	elseif game.Workspace:FindFirstChild("Live") then -- ink game
-		MOTU = "idk..."
+		MOTU = " Hint: NO HINT RN SINCE ITS IN BETA VERSION CUZ YES"
 	end
 
 	print(asciiArt)

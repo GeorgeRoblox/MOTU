@@ -22,6 +22,8 @@
 		MOTU = " Hint: NO HINT RN SINCE ITS IN BETA VERSION CUZ YES" 
 	elseif game.Workspace:FindFirstChild("Live") then -- ink game
 		MOTU = " Hint: NO HINT RN SINCE ITS IN BETA VERSION CUZ YES"
+eif game.Workspace:FindFirstChild("Lobby") then -- doors lobby
+		MOTU = " Hint: Nothing else is going to get added here"
 	end
 
 	print(asciiArt)

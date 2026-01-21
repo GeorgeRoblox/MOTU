@@ -24,6 +24,8 @@ elseif game.Workspace:FindFirstChild("Live") then -- ink game
 	MOTU = " Hint: Nothing else is going to get added here"
 elseif workspace.Game.Animatronics.Animatronics then -- eternal nights
 MOTU = " Hint: Nothing Else"
+elseif workspace.WeaponDisplays then
+MOTU = " Hint: yeah"
 end
 
 print(asciiArt)
